@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Create an Orbit mock account">
+    <title>Create account | Orbit</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+  <body class="auth-page">
+    <aside class="auth-aside" aria-label="About Orbit">
+      <a class="brand" href="login.html" aria-label="Orbit sign in"><span class="brand-mark" aria-hidden="true">O</span>Orbit</a>
+      <div class="auth-aside__content">
+        <p class="eyebrow">A better daily rhythm</p>
+        <h1>Build a connected academic workplace.</h1>
+        <p class="auth-aside__lead">Create a local mock account to preview how role-aware experiences will be organized in Orbit.</p>
+      </div>
+      <p class="auth-aside__footer">No server · No real account is created</p>
+    </aside>
+    <main class="auth-main">
+      <section class="auth-panel" aria-labelledby="register-title">
+        <header class="auth-panel__header">
+          <h2 id="register-title">Create mock account</h2>
+          <p>Your details stay only in this browser for the prototype.</p>
+        </header>
+        <form id="register-form" class="form-stack" novalidate>
+          <div class="form-row">
+            <label class="field-label" for="name">Full name <span class="required" aria-hidden="true">*</span></label>
+            <input class="field-input" id="name" name="name" type="text" autocomplete="name" placeholder="Your full name" required>
+            <p class="field-error" data-error-for="name" aria-live="polite"></p>
+          </div>
+          <div class="form-row">
+            <label class="field-label" for="email">Email address <span class="required" aria-hidden="true">*</span></label>
+            <input class="field-input" id="email" name="email" type="email" autocomplete="email" placeholder="name@institute.edu" required>
+            <p class="field-error" data-error-for="email" aria-live="polite"></p>
+          </div>
+          <div class="form-row">
+            <label class="field-label" for="role">Prototype role <span class="required" aria-hidden="true">*</span></label>
+            <select class="field-select" id="role" name="role" required>
+              <option value="">Select your role</option>
+              <option value="administrator">Administrator</option>
+              <option value="student">Student</option>
+              <option value="teacher">Teacher</option>
+              <option value="employee">Employee</option>
+            </select>
+            <p class="field-error" data-error-for="role" aria-live="polite"></p>
+          </div>
+          <div class="form-row form-row--split">
+            <div class="form-row">
+              <label class="field-label" for="password">Password <span class="required" aria-hidden="true">*</span></label>
+              <div class="password-control">
+                <input class="field-input" id="password" name="password" type="password" autocomplete="new-password" required>
+                <button class="password-toggle" type="button" data-password-toggle="password" aria-label="Show password">Show</button>
+              </div>
+              <p class="field-error" data-error-for="password" aria-live="polite"></p>
+            </div>
+            <div class="form-row">
+              <label class="field-label" for="confirm-password">Confirm password <span class="required" aria-hidden="true">*</span></label>
+              <div class="password-control">
+                <input class="field-input" id="confirm-password" name="confirmPassword" type="password" autocomplete="new-password" required>
+                <button class="password-toggle" type="button" data-password-toggle="confirm-password" aria-label="Show password">Show</button>
+              </div>
+              <p class="field-error" data-error-for="confirmPassword" aria-live="polite"></p>
+            </div>
+          </div>
+          <button class="button button--primary button--full" type="submit">Create account</button>
+        </form>
+        <p class="auth-footer">Already have a mock account? <a href="login.html">Sign in</a></p>
+      </section>
+    </main>
+    <script type="module" src="js/register.js"></script>
+  </body>
+</html>

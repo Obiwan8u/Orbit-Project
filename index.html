@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Orbit education and institute management system">
+    <title>Orbit | Workspace</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+  <body>
+    <main class="page-shell">
+      <p data-welcome-loading class="muted" aria-live="polite">Preparing your Orbit workspace…</p>
+      <section data-welcome-content class="card welcome-card" hidden aria-labelledby="welcome-title">
+        <div class="brand-mark" aria-hidden="true">O</div>
+        <p class="eyebrow"><span data-user-role></span> workspace</p>
+        <h1 id="welcome-title">Welcome, <span data-user-name></span>.</h1>
+        <p class="muted">Your mock session is active. The role-aware dashboard and navigation will be added in Phase 3.</p>
+        <p class="status-note">Authentication is a frontend prototype only. Do not use a real password.</p>
+        <button class="button button--secondary" type="button" data-sign-out>Sign out</button>
+      </section>
+    </main>
+    <script type="module">
+      import { initializeWelcomePage } from "./js/app.js";
+      initializeWelcomePage();
+    </script>
+  </body>
+</html>
